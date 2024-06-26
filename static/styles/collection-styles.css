@@ -13,50 +13,17 @@
 	justify-content: center;
 }
 
+.style {
+	margin: 0px 20px 30px;
+}
+
 .img-container {
     width: 200px;
     height: 260px;
-    margin: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
 	background-color: #f7f7f7;
-}
-
-.overlay {
-    width: 200px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	cursor: pointer;
-}
-
-.o-name {
-    width: 200px;
-    height: 260px;
-	opacity: 1;
-	z-index: 3;
-	color: white;
-	position: absolute;
-	font-size: 3.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	text-align: center;
-	font-family: ScatterInk;
-	text-shadow: 2px 2px #b3b1b5;
-	line-height: 1em;
-	transform: rotate(-15deg);
-}
-
-.o-col {
-    width: 200px;
-    height: 260px;
-	background-color: black;
-	position: relative;
-	z-index: 2;
-	opacity: 0.15;
 }
 
 .product {
@@ -77,6 +44,36 @@
 
 .img-style:hover {
 	cursor: pointer
+}
+
+.info {
+	width: 200px;
+}
+
+.info-desc {
+	margin: 10px 5px 0px;
+}
+
+.info-desc, .info-price{
+    font-size: 12px;
+	text-align: center;
+}
+
+.info-price {
+	font-weight: 600;
+}
+
+.button {
+	width: 200px;
+	background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 .close-div {
@@ -162,6 +159,32 @@
 	text-transform: uppercase;
 }
 
+.modal-button {
+	width: 50%;
+	background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
 .pdf-contain {
 	background-color: #f7f7f7;
 	width: 400px;
@@ -175,19 +198,36 @@
 		margin: 20px;
 	}
 	
+	.style {
+		margin: 0px 10px 20px;
+	}
+	
 	.img-container {
         width: 150px;
         height: 210px;
-        margin: 10px 5px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #f7f7f7;
     }
 	
-	.overlay, .o-col, .o-name, .product {
+    .info {
         width: 150px;
-        height: 210px;
+    }
+	
+	.info-desc {
+		margin: 10px 5px 0px;
+	}
+
+    .info-desc, .info-price{
+        font-size: 12px;
+        text-align: center;
+    }
+	
+	.button {
+        width: 150px;
+        padding: 10px 0px;
+        font-size: 10px;
 	}
 
     .img-style {
