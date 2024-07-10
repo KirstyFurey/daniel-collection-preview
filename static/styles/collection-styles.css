@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
- @font-face { 
-	 font-family: ScatterInk; src: url('ScatterInk.ttf'); 
-} 
+body {
+	font-family: "Montserrat", sans-serif;
+	color: black;
+	margin: none;
+	padding: none;
+}
 
 #style-container {
 	display: flex;
@@ -26,15 +29,6 @@
 	background-color: #f7f7f7;
 }
 
-.product {
-    width: 200px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	position: absolute;
-	z-index: 1;
-}
 
 .img-style {
     width: 200px;
@@ -48,6 +42,7 @@
 
 .info-desc {
 	margin: 10px 5px 0px;
+	height: 45px;
 }
 
 .info-desc, .info-price{
@@ -73,25 +68,6 @@
 	cursor: pointer
 }
 
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	cursor: pointer;
-}
-
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-.pdf-contain {
-	background-color: #f7f7f7;
-	width: 400px;
-	height: 520px;
-	padding: 20px 20px;
-}
 
 @media only screen and (max-width: 900px) {
 	
@@ -118,6 +94,7 @@ a:visited {
 	
 	.info-desc {
 		margin: 10px 5px 0px;
+		height: 53px;
 	}
 
     .info-desc, .info-price{
@@ -137,11 +114,11 @@ a:visited {
         object-fit: contain;
     }
 	
-	.pdf-contain {
-        margin-top: 30px;
-        background-color: #f7f7f7;
-        width: 300px;
-        height: 350px;
-        padding: 20px 8px;
-    }
+}
+
+@media only screen and (max-width: 400px) {
+	
+	.info-desc {
+		height: 60px;
+	}
 }
