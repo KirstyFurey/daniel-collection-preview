@@ -10,14 +10,14 @@ body {
 
 #style-container {
 	display: flex;
-	margin: 50px;
-	/*width: 100vw;*/
+	max-width: 960px;
+	margin: 0 auto;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .style {
-	margin: 0px 20px 30px;
+	margin: 15px 20px;
 }
 
 .img-container {
@@ -69,10 +69,10 @@ body {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
 	
 	#style-container {
-		margin: 20px;
+        max-width: 700px;
 	}
 	
 	.style {
@@ -116,9 +116,25 @@ body {
 	
 }
 
+@media only screen and (max-width: 700px) {
+	#style-container {
+        max-width: 400px;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	
 	.info-desc {
 		height: 60px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	#style-container {
+        max-width: 350px;
+	}
+	
+	.style {
+		margin: 0px 5px 20px;
 	}
 }
