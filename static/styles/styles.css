@@ -8,12 +8,25 @@ body {
 	padding: none;
 }
 
-#style-container {
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+body {
+    -ms-overflow-style: none;
+  }
+
+html {
+    scrollbar-width: none;
+  }
+
+.style-container {
 	display: flex;
+	justify-content: center;
 	max-width: 960px;
+	/*height: 7964px;*/
 	margin: 0 auto;
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .style,
@@ -33,10 +46,24 @@ body {
 
 .how-container {
     width: 400px;
-    height: 397px;
+    height: 424px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.arrive {
+	width: 200px;
+	background-color: black;
+}
+
+.arrive-p {
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 0px;
 }
 
 .style-b {
@@ -51,7 +78,7 @@ body {
 
 .how-style {
     width: 400px;
-    height: 397px;
+    height: 424px;
     object-fit: contain;
 }
 
@@ -90,7 +117,7 @@ body {
 
 @media only screen and (max-width: 980px) {
 	
-	#style-container {
+	.style-container {
         max-width: 700px;
 	}
 	
@@ -108,6 +135,14 @@ body {
         align-items: center;
         background-color: #f7f7f7;
     }
+	
+	.arrive {
+		width: 150px;
+	}
+	
+	.arrive-p {
+		font-size: 10px;
+	}
 	
 	.style-a {
 		display: none;
@@ -157,8 +192,9 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-	#style-container {
+	.style-container {
         max-width: 400px;
+		/*height: 13300px;*/
 	}
 }
 
@@ -170,7 +206,7 @@ body {
 }
 
 @media only screen and (max-width: 350px) {
-	#style-container {
+	.style-container {
         max-width: 350px;
 	}
 	
