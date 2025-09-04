@@ -40,9 +40,12 @@ a:visited {
 }
 
 .style,
-.style-a,
-.style-b {
+.how  {
 	margin: 15px 20px;
+}
+
+.how-m {
+	display: none;
 }
 
 .img-container {
@@ -55,11 +58,14 @@ a:visited {
 }
 
 .how-container {
-    width: 400px;
-    height: 424px;
+    width: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.how-container2 {
+	display: none;
 }
 
 .arrive {
@@ -87,9 +93,12 @@ a:visited {
 }
 
 .how-style {
-    width: 400px;
-    height: 424px;
+    width: 440px;
     object-fit: contain;
+}
+
+.how-style2 {
+	display: none;
 }
 
 .info {
@@ -124,6 +133,9 @@ a:visited {
 	cursor: pointer
 }
 
+.hidden {
+	visibility: hidden;
+}
 
 @media only screen and (max-width: 980px) {
 	
@@ -132,9 +144,8 @@ a:visited {
 	}
 	
 	.style,
-	.style-a,
-	.style-b {
-		margin: 0px 10px 20px;
+	.how-m  {
+		margin: 10px 10px;
 	}
 	
 	.img-container {
@@ -162,15 +173,25 @@ a:visited {
 		display: block;
 	}
 	
+	.how {
+		display: none;
+	}
+	
+	.how-m {
+		display: flex;
+	}
+	
 	.how-container2 {
-		display: block;
-		width: 300px;
-		height: 343px;
+        display: flex;
+        justify-content: center;
+		width: 340px;
+		height: 366px;
 	}
 	
 	.how-style2 {
-		width: 300px;
-		height: 343px;
+		display: block;
+		width: 320px;
+		height: 366px;
 	}
 	
     .info {
@@ -220,7 +241,8 @@ a:visited {
         max-width: 350px;
 	}
 	
-	.style {
-		margin: 0px 5px 20px;
+	.style,
+	.how-m {
+		margin: 10px 5px;
 	}
 }
